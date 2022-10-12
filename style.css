@@ -86,7 +86,7 @@ div > .cell{
 inside of another div inside of another div. 
 This will result in the blue pieces appearing. */
 
-div div div{
+div > div > div{
   display: block;
   height: 95%;
   width: 95%;
@@ -107,7 +107,7 @@ odd number element with a particular class,
 then use what you used in the above two selectors 
 to specify what the parent must be.*/
 
-#board, *cell:nth-child(2){
+.cell:nth-child(odd){
   background-color: black;
 }
 
